@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+
+{% block title %}
+  SIGN UP
+{% endblock title %}
+
+
+{% block content %}
+    <div class="container mt-3">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-success" type="submit">SIGN UP</button>
+        </form>
+    </div>
+{% endblock content %}
